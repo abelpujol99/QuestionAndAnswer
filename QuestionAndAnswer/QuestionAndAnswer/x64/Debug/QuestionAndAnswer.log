@@ -1,0 +1,34 @@
+﻿  Game.cpp
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.h(8,14): error C2143: syntax error: missing ';' before '*'
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.h(8,14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.h(8,16): error C2825: 'InputListener': must be a class or namespace when followed by '::'
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.h(8,31): error C2510: 'InputListener': left of '::' must be a class/struct/union
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.h(8,42): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\Game.h(11,15): error C2143: syntax error: missing ';' before '*'
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\Game.h(11,15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\Game.h(11,30): error C2238: unexpected token(s) preceding ';'
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\Game.cpp(6,8): error C2039: 'inputListener': is not a member of 'Game'
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\Game.h(7): message : see declaration of 'Game'
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\Game.cpp(6,39): error C2352: 'InputListener::Instance': a call of a non-static member function requires an object
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.h(25): message : see declaration of 'InputListener::Instance'
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\Game.cpp(9,2): error C2065: 'inputListener': undeclared identifier
+  InputListener.cpp
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.h(8,14): error C2143: syntax error: missing ';' before '*'
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.h(8,14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.h(8,16): error C2825: 'InputListener': must be a class or namespace when followed by '::'
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.h(8,31): error C2510: 'InputListener': left of '::' must be a class/struct/union
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.h(8,42): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.cpp(3,14): error C2143: syntax error: missing ';' before '*'
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.cpp(3,14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.cpp(3,1): error C2086: 'int InputListener': redefinition
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.h(8): message : see declaration of 'InputListener'
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.cpp(4,1): error C2761: 'InputListener *InputListener::Instance(std::string)': redeclaration of member is not allowed
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.cpp(4,1): error C2059: syntax error: '{'
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.cpp(4,1): error C2143: syntax error: missing ';' before '{'
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.cpp(4,1): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.cpp(24,52): error C3867: 'InputListener::AnswerTheQuestion': non-standard syntax; use '&' to create a pointer to member
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.cpp(44,45): warning C4244: 'argument': conversion from 'SHORT' to 'char', possible loss of data
+C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.cpp(50,46): error C2082: redefinition of formal parameter 'elapsedTime'
+  Main.cpp
+  Word.cpp
+  Generating Code...
