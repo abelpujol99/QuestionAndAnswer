@@ -29,6 +29,6 @@ C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndA
 C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.cpp(24,52): error C3867: 'InputListener::AnswerTheQuestion': non-standard syntax; use '&' to create a pointer to member
 C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.cpp(44,45): warning C4244: 'argument': conversion from 'SHORT' to 'char', possible loss of data
 C:\Users\AbelPujol\source\repos\QuestionAndAnswer\QuestionAndAnswer\QuestionAndAnswer\InputListener.cpp(50,46): error C2082: redefinition of formal parameter 'elapsedTime'
-  Main.cpp
+  Question.cpp
   Word.cpp
   Generating Code...
