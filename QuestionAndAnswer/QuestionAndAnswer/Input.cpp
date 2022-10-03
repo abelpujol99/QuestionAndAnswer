@@ -10,3 +10,8 @@ Input::~Input() {
 
 	delete[] this;
 }
+
+char Input::GetInputChar() {
+
+	return this->inputChar;
+}

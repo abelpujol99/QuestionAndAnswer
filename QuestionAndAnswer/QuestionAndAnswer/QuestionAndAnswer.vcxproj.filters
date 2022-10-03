@@ -15,9 +15,29 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Answer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Question.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Answer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Word.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="Game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -30,31 +50,14 @@
     <ClCompile Include="Question.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Answer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Word.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Game.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Question.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Answer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Input.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="InputListener.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Word.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

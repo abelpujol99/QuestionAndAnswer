@@ -8,12 +8,18 @@ class Question
 private:
 
 	std::string text;
-	std::vector<Answer*> answers;
+	std::vector<Answer> answers;
 	Answer correctAnswer;
 
 public:
 
-	Question(std::vector<Answer*> answers);
+	Question(std::string text);
 	~Question();
-	bool CheckAnswer(Answer answer);
+	void SetUpAnswers(std::vector<Answer> answers);
+	void SetUpLettersForAnswers();
+	void SetUpCorrectAnswer(std::string isCorrectAnswerText);
+	int CheckAnswer(char inputTyped);
+	bool CheckUpperAndLowCaps(char letter, char inputToCheck);
+	void PrintQuestion();
+	void PresentAnswers();
 };

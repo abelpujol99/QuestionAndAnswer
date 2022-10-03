@@ -4,7 +4,7 @@ InputListener* InputListener::Instance(std::string validChars)
 {
 	if (instance == nullptr)
 	{
-		instance = new InputListener(validChars);
+		this->instance = new InputListener(validChars);
 	}
 
 	return instance;
@@ -16,32 +16,30 @@ InputListener::InputListener(std::string validChars) {
 	this->inputs = new std::vector<Input>;
 	this->inputMutex = new std::mutex;
 	this->stopListener = false;
-
 }
 
 void InputListener::StartListener() {
 
-	this->listener = new std::thread(AnswerTheQuestion);
-	listener->join();
-	inputMutex->unlock();
+	this->listener = new std::thread(&AnswerTheQuestion);
+	this->listener->join();
+	this->inputMutex->unlock();
 }
 
-char InputListener::AnswerTheQuestion() {
+void InputListener::AnswerTheQuestion() {
 
 	std::vector<std::chrono::system_clock::time_point> timeCounters;
 	std::chrono::duration<double> elapsedTime;
-	char response = 0;
 
 	timeCounters[0] = std::chrono::system_clock::now();
 
-	while (!CatchControls(response) || TimeToAnswer(timeCounters, elapsedTime));
+	while (!CatchControls() || TimeToAnswer(timeCounters, elapsedTime));
 	inputMutex->lock();
-	return response;
+	return;
 }
 
-bool InputListener::CatchControls(char& response) {
+bool InputListener::CatchControls() {
 
-	return CheckIfAllowedInput(GetAsyncKeyState(WM_KEYDOWN), response);
+	return CheckIfAllowedInput(GetAsyncKeyState(WM_KEYDOWN));
 }
 
 bool InputListener::TimeToAnswer(std::vector<std::chrono::system_clock::time_point> timeCounters, std::chrono::duration<double> elapsedTime) {
@@ -52,7 +50,7 @@ bool InputListener::TimeToAnswer(std::vector<std::chrono::system_clock::time_poi
 	return elapsedTime.count() > 5;
 }
 
-bool InputListener::CheckIfAllowedInput(char input, char& response) {
+bool InputListener::CheckIfAllowedInput(char input) {
 
 	for (int i = 0; i < validChars.length(); i++)
 	{
@@ -69,4 +67,9 @@ bool InputListener::CheckIfAllowedInput(char input, char& response) {
 void InputListener::ClearInputs() {
 
 	this->inputs->clear();
+}
+
+char InputListener::GetLastInput()
+{
+	return inputs->operator[](inputs->size()).GetInputChar();
 }

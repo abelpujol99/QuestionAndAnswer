@@ -12,4 +12,5 @@ public:
 
 	Input(char input);
 	~Input();
+	char GetInputChar();
 };

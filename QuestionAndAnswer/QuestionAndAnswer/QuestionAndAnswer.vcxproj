@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{5c7e0e19-8426-499d-9274-eafa7db61524}</ProjectGuid>
+    <ProjectGuid>{e432f47f-486d-44f4-9962-e8234d70943a}</ProjectGuid>
     <RootNamespace>QuestionAndAnswer</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -127,6 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Answer.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="InputListener.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="Question.h" />
+    <ClInclude Include="Word.h" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="Answer.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Input.cpp" />
@@ -134,14 +143,6 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Question.cpp" />
     <ClCompile Include="Word.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Answer.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="Input.h" />
-    <ClInclude Include="InputListener.h" />
-    <ClInclude Include="Question.h" />
-    <ClInclude Include="Word.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

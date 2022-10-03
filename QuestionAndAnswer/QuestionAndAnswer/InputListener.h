@@ -5,7 +5,7 @@
 #include<Windows.h>
 #include "Input.h"
 
-InputListener* InputListener::instance = nullptr;
+//InputListener* InputListener::instance = nullptr;
 
 class InputListener {
 
@@ -25,9 +25,10 @@ public:
 	InputListener* Instance(std::string validChars);
 	~InputListener();
 	void StartListener();
-	char AnswerTheQuestion();
-	bool CatchControls(char& response);
+	void AnswerTheQuestion();
+	bool CatchControls();
 	bool TimeToAnswer(std::vector<std::chrono::system_clock::time_point> timeCounters, std::chrono::duration<double> elapsedTime);
-	bool CheckIfAllowedInput(char input, char& response);
+	bool CheckIfAllowedInput(char input);
 	void ClearInputs();
+	char GetLastInput();
 };
